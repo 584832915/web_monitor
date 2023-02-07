@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {  
+      "target": "es6", 
+      "outDir": "dist",                         
+      "module": "ES6",                     
+      "strict": true,                         
+      "skipLibCheck": true,                    
+      "forceConsistentCasingInFileNames": true ,//禁止对同一个文件的不一致的引用。
+      "baseUrl": ".",// 工作根目录，会影响vscode import生成的路径
+      "moduleResolution": "Node", // 引入package.json不会报红
+      "noImplicitAny": false, // 是否默认禁用 any
+      "allowUnusedLabels": false, // 不报告未使用的标签错误d
+      "lib": ["dom", "es6"],
+      "declaration": true, // 是否自动创建类型声明文件 / / 类型声明文件的输出目录
+      "declarationDir": "./dist/types/", // 类型声明文件的输出目录
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+      "importHelpers": true,
+      "strictPropertyInitialization": false,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "preserveConstEnums": true
+    },
+    "include": ["src/**/*"]
+  }
